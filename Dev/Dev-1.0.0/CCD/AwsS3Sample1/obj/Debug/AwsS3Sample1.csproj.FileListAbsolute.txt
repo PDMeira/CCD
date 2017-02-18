@@ -1,0 +1,7 @@
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\AwsS3Sample1\bin\Debug\AwsS3Sample1.exe.config
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\AwsS3Sample1\bin\Debug\AwsS3Sample1.exe
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\AwsS3Sample1\bin\Debug\AwsS3Sample1.pdb
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\AwsS3Sample1\bin\Debug\AWSSDK.dll
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\AwsS3Sample1\obj\Debug\AwsS3Sample1.exe
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\AwsS3Sample1\obj\Debug\AwsS3Sample1.pdb
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\AwsS3Sample1\obj\Debug\AwsS3Sample1.csprojResolveAssemblyReference.cache

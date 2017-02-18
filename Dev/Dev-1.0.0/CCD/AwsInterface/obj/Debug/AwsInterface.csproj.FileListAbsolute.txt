@@ -1,0 +1,7 @@
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\AwsInterface\bin\Debug\AwsInterface.dll.config
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\AwsInterface\bin\Debug\AwsInterface.dll
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\AwsInterface\bin\Debug\AwsInterface.pdb
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\AwsInterface\bin\Debug\AWSSDK.dll
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\AwsInterface\obj\Debug\AwsInterface.dll
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\AwsInterface\obj\Debug\AwsInterface.pdb
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\AwsInterface\obj\Debug\AwsInterface.csprojResolveAssemblyReference.cache

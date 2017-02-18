@@ -1,0 +1,493 @@
+﻿body
+{
+    font: normal 12px Arial;
+}
+.header {
+    white-space: nowrap;
+}
+.header div
+{
+    float: left;
+    min-width: 24%;
+    white-space: nowrap;
+}
+
+.header div .pane
+{
+    position: relative;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+    border: 1px solid #d8e4f3;
+    width: 95%;
+    height: 200px;
+    white-space: nowrap;
+}
+
+.right
+{
+    vertical-align: top;
+    float: left;
+    clear: none;
+    padding-top: 10px;
+}
+.pane
+{
+    width: 100%;
+}
+.pane .top
+{
+    margin-left: 5px;
+    font-weight: bolder;
+    font-size: large;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #000000;
+    width: 95%;
+    padding-bottom: 2px;
+}
+.pane .bottom
+{
+}
+.ruleRow
+{
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 5px;
+    clear: both;
+    float: left;
+}
+.ruleRow .inp
+{
+    float: left;
+}
+
+.ruleRow .lbl
+{
+    padding-left: 5px;
+    margin-top: 2px;
+    float: left;
+}
+.contentBody
+{
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    border-top-style: solid;
+    border-top-width: thick;
+    border-top-color: #000000;
+}
+.content
+{
+    width: 50%;
+    margin-top: 10px;
+}
+.bodyLeft
+{
+    float: left;
+}
+.bodyRight
+{
+    float: left;
+}
+.txtArea
+{
+    padding-top: 10px;
+}
+.actualTxtArea
+{
+    width: 500px;
+    height: 150px;
+}
+.finalTxtArea
+{
+    height: 530px;
+}
+.txtAreaHead
+{
+    font-weight: bold;
+    font-size: medium;
+}
+#MergeCCD {
+    float: left;
+    clear: both;
+}
+.loader_overlay {
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.60;
+	filter:Alpha(Opacity=60);
+	}
+	.loader_overlay {
+	opacity: 0.90;
+	z-index:1000;
+	}
+	.loader_count {
+		position: absolute;
+		top:40px;
+		right:50px;
+		width:100px;
+		font-size:22px;
+		line-height:25px;
+		color:#f49403;
+		text-align:right;
+		z-index:20;
+		}
+	.loader {
+		position:fixed;
+		top:50%;
+		left:50%;
+		width:600px;
+		height:200px;
+		margin:-95px 0 0 -300px;
+		z-index:1010;
+		}
+		.loader>div {
+			position:absolute;
+			overflow:hidden;
+			}
+			.loader>div>span {
+				position:absolute;
+				height:3px;
+				width:240px;
+				background:#169bf8;
+				-moz-box-shadow:  0px 0px 6px 1px rgba(65, 191, 252, 0.8);
+				-webkit-box-shadow: 0px 0px 6px 1px rgba(65, 191, 252, 0.8);			
+				box-shadow: 0px 0px 6px 1px rgba(65, 191, 252, 0.8);
+				-webkit-transform-origin: 0px 0px;
+				-moz-transform-origin: 0px 0px;
+				-o-transform-origin: 0px 0px;
+				-moz-border-radius:3px; 
+				-webkit-border-radius:3px; 
+				border-radius: 3px;
+				display:block; 
+				}
+				
+			.loader>div:nth-child(1),
+			.loader>div:nth-child(3),
+			.loader>div:nth-child(5),
+			.loader>div:nth-child(7),
+			.loader>div:nth-child(9) {
+				-webkit-transform-origin: 0px 0px;
+				-moz-transform-origin: 0px 0px;
+				-o-transform-origin: 0px 0px;
+				}
+			.loader>div:nth-child(2),
+			.loader>div:nth-child(4),
+			.loader>div:nth-child(6),
+			.loader>div:nth-child(8) {
+				-webkit-transform-origin: 100% 0px;
+				-moz-transform-origin: 100% 0px;
+				-o-transform-origin: 100% 0px;
+				}	
+				
+				
+				
+			.loader>div:nth-child(1) {
+				top:75px; left:-6px;
+				width:252px; height:15px;
+				-webkit-animation:takt1 2s linear infinite;
+				-moz-animation:takt1 2s linear infinite;
+				-o-animation:takt1 2s linear infinite;
+				/*-moz-animation-timing-function:ease-out;  */
+				z-index:9;
+				}
+				.loader>div:nth-child(1)>span {
+					top:6px; left:6px;
+					}
+			.loader>div:nth-child(2) {
+				bottom:110px; left:231px;
+				width:32px; height:50px;
+				-moz-animation:takt2 2s linear infinite;
+				-webkit-animation:takt2 2s linear infinite;
+				-o-animation:takt2 2s linear infinite;
+				z-index:8;
+				}
+				.loader>div:nth-child(2)>span {
+					left:6px; bottom:3px; 
+					width:40px; height:4px;
+					-webkit-transform:rotate(-65deg);
+					-moz-transform:rotate(-65deg);
+					-o-transform:rotate(-65deg);
+					}
+			.loader>div:nth-child(3) {
+				top:40px; left:249px;
+				width:26px; height:85px;
+				-moz-animation:takt3 2s linear infinite;
+				-webkit-animation:takt3 2s linear infinite;
+				-o-animation:takt3 2s linear infinite;
+				z-index:7;
+				}
+				.loader>div:nth-child(3)>span {
+					left:8px; top:6px; 
+					width:72px; height:4px;
+					-webkit-transform:rotate(80deg);
+					-moz-transform:rotate(80deg);
+					-o-transform:rotate(80deg);
+					}
+			.loader>div:nth-child(4) {
+				bottom:71px; left:259px;
+				width:32px; height:52px;
+				-moz-animation:takt4 2s linear infinite;
+				-webkit-animation:takt4 2s linear infinite;
+				-o-animation:takt4 2s linear infinite;
+				z-index:6;
+				}
+				.loader>div:nth-child(4)>span {
+					left:6px; bottom:6px;
+					width:40px; height:4px;
+					-webkit-transform:rotate(-70deg);
+					-moz-transform:rotate(-70deg);
+					-o-transform:rotate(-70deg);
+					}
+			.loader>div:nth-child(5) {
+				top:75px; left:273px;
+				width:64px; height:15px;
+				-moz-animation:takt5 2s linear infinite;
+				-webkit-animation:takt5 2s linear infinite;
+				-o-animation:takt5 2s linear infinite;
+				z-index:5;
+				}
+				.loader>div:nth-child(5)>span {
+					top:6px; left:6px; 
+					width:52px; 
+					}
+			.loader>div:nth-child(6) {
+				bottom:106px; left:322px;
+				width:35px; height:93px;
+				-moz-animation:takt6 2s linear infinite;
+				-webkit-animation:takt6 2s linear infinite;
+				-o-animation:takt6 2s linear infinite;
+				z-index:4;
+				}
+				.loader>div:nth-child(6)>span {
+					left:6px; bottom:6px;
+					width:81px; height:4px;
+					-webkit-transform:rotate(-77deg);
+					-moz-transform:rotate(-77deg);
+					-o-transform:rotate(-77deg);
+					}
+			.loader>div:nth-child(7) {
+				top:0px; left:338px;
+				width:27px; height:203px;
+				-moz-animation:takt7 2s linear infinite;
+				-webkit-animation:takt7 2s linear infinite;
+				-o-animation:takt7 2s linear infinite;
+				z-index:3;
+				}
+				.loader>div:nth-child(7)>span {
+					left:12px; top:6px;
+					width:190px; height:4px;
+					-webkit-transform:rotate(88deg);
+					-moz-transform:rotate(88deg);
+					-o-transform:rotate(88deg);
+					}
+			.loader>div:nth-child(8) {
+				bottom:-4px; left:347px;
+				width:40px; height:126px;
+				-moz-animation:takt8 2s linear infinite;
+				-webkit-animation:takt8 2s linear infinite;
+				-o-animation:takt8 2s linear infinite;
+				z-index:2;
+				}
+				.loader>div:nth-child(8)>span {
+					left:6px; bottom:6px;
+					width:115px; height:4px;
+					-webkit-transform:rotate(-78deg);
+					-moz-transform:rotate(-78deg);
+					-o-transform:rotate(-78deg);
+					} 
+			.loader>div:nth-child(9) {
+				top:76px; left:371px;
+				width:232px; height:15px;
+				-moz-animation:takt9 2s linear infinite;
+				-webkit-animation:takt9 2s linear infinite;
+				-o-animation:takt9 2s linear infinite;
+				z-index:1;
+				}
+				.loader>div:nth-child(9)>span {
+					top:6px; left:6px; 
+					width:220px; 
+					}  
+
+@-moz-keyframes takt1 {
+	0%{ width:0; }
+	20%{ width:100%; opacity:1; }
+	100%{ width:100%; opacity:0; }
+	}
+@-moz-keyframes takt2 {
+	0%{ height:0; }
+	15%{ height:0; }
+	23%{ height:100%; opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-moz-keyframes takt3 {
+	0%{ height:0; }
+	20%{ height:0; }
+	29%{ height:100%; opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-moz-keyframes takt4 {
+	0%{ height:0; }
+	25%{ height:0; }
+	32%{ height:100%; opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-moz-keyframes takt5 {
+	0%{ width:0; }
+	29%{ width:0; }
+	36%{ width:100%; opacity:1; }
+	100%{ width:100%; opacity:0; }
+	}
+@-moz-keyframes takt6 {
+	0%{ height:0; }
+	33%{ height:0; }
+	43%{ height:100%; opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-moz-keyframes takt7 {
+	0%{ height:0; }
+	39%{ height:0; }
+	59%{ height:100%; opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-moz-keyframes takt8 {
+	0%{ height:0; }
+	55%{ height:0; }
+	69%{ height:100%; opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-moz-keyframes takt9 {
+	0%{ width:0; }
+	65%{ width:0; }
+	70%{ opacity:1; }
+	88%{ width:100%;  }
+	100%{ width:100%; opacity:0; }
+	}
+	
+	
+@-webkit-keyframes takt1 {
+	0%{ width:0; }
+	20%{ width:100%; opacity:1; }
+	100%{ width:100%; opacity:0; }
+	}
+@-webkit-keyframes takt2 {
+	0%{ height:0; }
+	15%{ height:0; }
+	23%{ height:100%; opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-webkit-keyframes takt3 {
+	0%{ height:0; }
+	20%{ height:0; }
+	29%{ height:100%; opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-webkit-keyframes takt4 {
+	0%{ height:0; }
+	25%{ height:0; }
+	32%{ height:100%; }
+	65%{ opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-webkit-keyframes takt5 {
+	0%{ width:0; }
+	29%{ width:0; }
+	36%{ width:100%; opacity:1; }
+	100%{ width:100%; opacity:0; }
+	}
+@-webkit-keyframes takt6 {
+	0%{ height:0; }
+	33%{ height:0; }
+	43%{ height:100%; opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-webkit-keyframes takt7 {
+	0%{ height:0; }
+	39%{ height:0; }
+	59%{ height:100%; }
+	80%{ opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-webkit-keyframes takt8 {
+	0%{ height:0; }
+	55%{ height:0; }
+	69%{ height:100%; opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-webkit-keyframes takt9 {
+	0%{ width:0; }
+	65%{ width:0; }
+	70%{ opacity:1; }
+	88%{ width:100%; }
+	100%{ width:100%; opacity:0; }
+	}
+	
+	
+@-o-keyframes takt1 {
+	0%{ width:0; }
+	20%{ width:100%; }
+	50%{ opacity:1; }
+	100%{ width:100%; opacity:0; }
+	}
+@-o-keyframes takt2 {
+	0%{ height:0; }
+	15%{ height:0; }
+	23%{ height:100%; }
+	55%{ opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-o-keyframes takt3 {
+	0%{ height:0; }
+	20%{ height:0; }
+	29%{ height:100%; }
+	60%{ opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-o-keyframes takt4 {
+	0%{ height:0; }
+	25%{ height:0; }
+	32%{ height:100%; }
+	65%{ opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-o-keyframes takt5 {
+	0%{ width:0; }
+	29%{ width:0; }
+	36%{ width:100%; }
+	70%{ opacity:1; }
+	100%{ width:100%; opacity:0; }
+	}
+@-o-keyframes takt6 {
+	0%{ height:0; }
+	33%{ height:0; }
+	43%{ height:100%; }
+	75%{ opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-o-keyframes takt7 {
+	0%{ height:0; }
+	39%{ height:0; }
+	59%{ height:100%; }
+	80%{ opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-o-keyframes takt8 {
+	0%{ height:0; }
+	55%{ height:0; }
+	69%{ height:100%; }
+	85%{ opacity:1; }
+	100%{ height:100%; opacity:0; }
+	}
+@-o-keyframes takt9 {
+	0%{ width:0; }
+	65%{ width:0; }
+	88%{ width:100%; }
+	90%{ opacity:1; }
+	100%{ width:100%; opacity:0; }
+	}

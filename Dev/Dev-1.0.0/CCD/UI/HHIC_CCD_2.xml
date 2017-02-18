@@ -1,0 +1,2375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<!--
+********************************************************
+  Header section
+********************************************************
+-->
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.3.27.1776" assigningAuthorityName="CDA/R2"/>
+  <templateId root="2.16.840.1.113883.10.20.1" assigningAuthorityName="CCD"/>
+  <templateId root="2.16.840.1.113883.3.88.11.32.1" assigningAuthorityName="HITSP/C32"/>
+  <!--CCD v1.0 Template Root-->
+  <id root="ede-00161780af43-4acf6c1f-137-0"/>
+  <code code="34133-9" displayName="Summarization of episode note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <title>Editha Tester - CCD/C32</title>
+  <effectiveTime value="20130121130015+0400"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <recordTarget>
+    <patientRole>
+      <id extension="1170-8" root="2.16.840.1.113883.3.227.2.1"/>
+      <addr use="HP">
+        <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+        <streetAddressLine>Apt C</streetAddressLine>
+        <city>South Bend</city>
+        <state>IN</state>
+        <postalCode>46615</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom use="HP" value="(574)-253-5391"/>
+      <telecom use="MC" value="(574)-544-4912"/>
+      <patient>
+        <name use="L">
+          <given qualifier="CL">Editha</given>
+          <family qualifier="CL">Tester</family>
+        </name>
+        <name>Editha Tester</name>
+        <administrativeGenderCode code="F" displayName="Female" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGenderCode"/>
+        <birthTime value="19370330"/>
+        <languageCommunication>
+          <templateId root="2.16.840.1.113883.3.88.11.32.2"/>
+          <languageCode code="UNK"/>
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20121009130015+0400"/>
+    <assignedAuthor>
+      <id extension="" root="2.16.840.1.113883.3.1805.1"/>
+      <addr use="HP">
+        <streetAddressLine></streetAddressLine>
+        <streetAddressLine></streetAddressLine>
+      </addr>
+      <telecom use="WP" value="tel:+1"/>
+      <assignedPerson>
+        <name>William Richards</name>
+        <name use="L">
+        <given>William</given>
+        <family>Richards</family>
+        </name>
+      </assignedPerson>
+      <representedOrganization>
+        <id extension="" root="2.16.840.1.113883.3.1805.1"/>
+        <name>Michiana Health Information Network</name>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id extension="" root="2.16.840.1.113883.3.1805.1"/>
+        <name>Michiana Health Information Network</name>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <participant typeCode="IND">
+    <templateId root="2.16.840.1.113883.3.88.11.83.3"/>
+    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.4"/>
+    <time nullFlavor="UNK"/>
+    <associatedEntity classCode="NOK">
+      <code code="DAU" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Contact Relationship" displayName="natural daughter">
+        <originalText>natural daughter</originalText>
+        <translation code="D" codeSystem="HL70063" displayName="DAUGHTER"/>
+        <translation code="DAU" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Contact Relationship" displayName="natural daughter">
+          <originalText>natural daughter</originalText>
+          <translation code="D" codeSystem="REL99" displayName="DAUGHTER"/>
+        </translation>
+      </code>
+      <addr use="HP">
+        <streetAddressLine>7109 North Meridian</streetAddressLine>
+        <city>Indianapolis</city>
+        <state>IN</state>
+        <postalCode>46260</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom value="tel:(317)865-6302"/>
+      <associatedPerson>
+        <name><family>Tester</family><given>Snoopy</given></name>
+      </associatedPerson>
+    </associatedEntity>
+  </participant>
+  <informationRecipient>
+    <intendedRecipient>
+      <addr use="HP">
+        <streetAddressLine>7109 North Meridian</streetAddressLine>
+        <city>Indianapolis</city>
+        <state>IN</state>
+        <postalCode>46260</postalCode>
+        <country>US</country>
+      </addr>
+      <telecom use="HP" value="(574)-666-5555"/>
+      <telecom use="MC" value="(574)-666-5554"/>
+      <informationRecipient>
+        <name>Editha Tester</name>
+      </informationRecipient>
+    </intendedRecipient>
+  </informationRecipient>
+  <legalAuthenticator>
+    <time value="20091009130015+0400"/>
+    <signatureCode code="S"/>
+    <assignedEntity>
+      <id nullFlavor="NI"/>
+      <representedOrganization>
+        <id extension="" root="2.16.840.1.113883.3.1805.1"/>
+        <name>Michiana Health Information Network</name>
+      </representedOrganization>
+    </assignedEntity>
+  </legalAuthenticator>
+  <documentationOf>
+    <serviceEvent classCode="PCPR">
+      <effectiveTime>
+        <low value="19370330"/>
+        <high value="20091009"/>
+      </effectiveTime>
+      <performer typeCode="PRF">
+        <templateId root="2.16.840.1.113883.3.88.11.32.4"/>
+        <functionCode code="PP" displayName="Primary Provider" codeSystem="2.16.840.1.113883.12.443" codeSystemName="Provider Role">
+          <originalText>Primary Provider</originalText>
+        </functionCode>
+        <time>
+          <low value="20130111"/>
+          <high value="20130121"/>
+        </time>
+        <assignedEntity>
+          <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+          <code code="200000000X" displayName="Allopathic and Osteopathic Physicians" codeSystem="2.16.840.1.113883.6.101" codeSystemName="ProviderCodes"/>
+          <assignedPerson>
+            <name>Patricia W. Baxter Do</name>
+          </assignedPerson>
+          <representedOrganization>
+            <id extension="" root="2.16.840.1.113883.3.1805.1"/>
+            <name>Michiana Health Information Network</name>
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+<!--
+********************************************************
+  Body section
+********************************************************
+-->
+  <component>
+    <structuredBody>
+<!--
+********************************************************
+  Purpose section
+********************************************************
+-->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.13"/>
+          <code code="48764-5" codeSystem="2.16.840.1.113883.6.1"/>
+          
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.30"/>
+              <code code="23745001" codeSystem="2.16.840.1.113883.6.96" displayName="Documentation procedure"/>
+              <statusCode code="completed"/>
+              <entryRelationship typeCode="RSON">
+                <act classCode="ACT" moodCode="EVN">
+                  <code code="3457005" codeSystem="2.16.840.1.113883.6.96" displayName="Medicaleme"/>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+<!--
+********************************************************
+  Payers section
+********************************************************
+-->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.9"/>
+          <code code="48768-6" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Payers</title>
+          <text>
+            <table border="thin solid #cccccc" width="100%">
+              <tbody>
+                <tr>
+                  <th>Type</th>
+                  <th>Date</th>
+                  <th>Identification Numbers</th>
+                  <th>Payment Provider</th>
+                  <th>Subscriber</th>
+                </tr>
+                <tr>
+                  <td rowspan="4">Health Maintenance Organization (HMO)</td>
+                  <td rowspan="4"></td>
+                  <td rowspan="1">Policy Number: A0615536401</td>
+                  <td rowspan="4">Acme Insurance</td>
+                  <td rowspan="4">John Tester</td>
+                </tr>
+                <tr>
+                  <td rowspan="1">Group Number: 16053M</td>
+                </tr>
+                <tr>
+                  <td rowspan="1">Group Name: Encompass 65</td>
+                </tr>
+                <tr>
+                  <td rowspan="1">PayID: 95308</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="DEF">
+              <templateId root="2.16.840.1.113883.10.20.1.20"/>
+              <id root="2.16.840.1.113883.3.227.10.12" extension="290"/>
+              <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" displayName="Payment sources"/>
+              <statusCode code="completed"/>
+              <informant>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                  <addr use="WP">
+                    <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                    <streetAddressLine>Apt C</streetAddressLine>
+                    <city>South Bend</city>
+                    <state>IN</state>
+                    <postalCode>46615</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="HP" value="(574)-666-5555"/>
+                  <telecom use="MC" value="(574)-666-5554"/>
+                  <representedOrganization>
+                    <name></name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+              <entryRelationship typeCode="COMP">
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.26" extension="16053M"/>
+                  <id root="4acf6c2c-0137-0000-0101-00161780af43"/>
+                  <code code="HM" displayName="Health Maintenance Organization (HMO)" codeSystem="2.16.840.1.113883.6.255.1336" codeSystemName="X12N-1336"/>
+                  <statusCode code="completed"/>
+                  <performer typeCode="PRF">
+                    <assignedEntity>
+                      <id extension="95308" root="2.16.840.1.113883.12.285"/>
+                      <addr>
+                        <streetAddressLine>511 Farber Lakes Drive</streetAddressLine>
+                        <city>Buffalo</city>
+                        <state>IN</state>
+                        <country>US</country>
+                      </addr>
+                      <telecom use="WP" value="tel:+1(716)-631-3001"/>
+                      <telecom use="WP" value="fax:+1(716)-631-2891"/>
+                      <representedOrganization>
+                        <name>Iha</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </performer>
+                  <participant typeCode="COV">
+                    <participantRole classCode="PAT">
+                      <id extension="-308-0" root="2.16.840.1.113883.3.227.2.1"/>
+                      <code code="FAMDEP" displayName="family dependent" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
+                      <playingEntity>
+                        <name>Editha Tester</name>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <participant typeCode="HLD">
+                    <participantRole>
+                      <id extension="-1073837440" root="2.16.840.1.113883.3.227.10.14"/>
+                      <addr>
+                        <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                        <streetAddressLine></streetAddressLine>
+                        <city>South Bend </city>
+                        <country>US</country>
+                      </addr>
+                      <playingEntity>
+                        <name>John Tester</name>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                </act>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+<!--
+********************************************************
+  Problems section
+********************************************************
+-->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.11"/>
+          <code code="11450-4" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Problems</title>
+          <text>
+            <table border="thin solid #cccccc" width="100%">
+              <tbody>
+                <tr>
+                  <th>Date</th>
+                  <th>ICD9 Code</th>
+                  <th>Description</th>
+                  <th>Provider</th>
+                  <th>Status</th>
+                </tr>
+                
+                <tr>
+                  <td>Onset: 01/11/2013</td>
+                  <td>733.09</td>
+                  <td>Osteoporosis Other</td>
+                  <td>Patricia W. Baxter Do</td>
+                  <td>Chronic</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="COMP">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.27"/>
+              <id root="2.16.840.1.113883.3.227.10.1" extension="281"/>
+              <code nullFlavor="NA"/>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                  <id root="2.16.840.1.113883.3.227.10.1" extension="281"/>
+                  <code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20120505"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="240157009" displayName="Osteoporosis Other" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <informant>
+                    <assignedEntity>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <addr use="WP">
+                        <streetAddressLine>734 Broadway Avenue</streetAddressLine>
+                        <streetAddressLine>South Bend, IN 46615-1236</streetAddressLine>
+                        <country>US</country>
+                      </addr>
+                      <telecom use="WP" value="tel:+1(574)-712-0490"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedEntity>
+                  </informant>
+                  <entryRelationship typeCode="REFR">
+                    <observation moodCode="EVN" classCode="OBS">
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <code displayName="Status" codeSystemName="LOINC" code="33999-4" codeSystem="2.16.840.1.113883.6.1"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CE" displayName="Chronic" codeSystemName="SNOMED CT" code="90734009" codeSystem="2.16.840.1.113883.6.96"/>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+<!--
+********************************************************
+  Family History section
+********************************************************
+-->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.4"/>
+          <code code="10157-6" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Family History</title>
+          <text>
+            <table border="thin solid #cccccc" width="100%">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Family Member(s)</th>
+                  <th>Problem(s)</th>
+                  <th>Comments</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td>Father</td>
+                  <td>Myocardial infarction</td>
+                  <td>(Deceased)</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Mother</td>
+                  <td>Diabetes mellitus type 1</td>
+                  <td>(Deceased)</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Number of Children</td>
+                  <td>4</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Number of Siblings</td>
+                  <td>Siblings: 6</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.23"/>
+              <statusCode code="completed"/>
+              <subject>
+                <relatedSubject classCode="PRS">
+                  <code code="66839005" codeSystem="2.16.840.1.113883.6.96" displayName="Father"/>
+                  <subject>
+                    <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Male"/>
+                    <birthTime nullFlavor="NA"/>
+                  </subject>
+                </relatedSubject>
+              </subject>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.42"/>
+                  <id root="2.16.840.1.113883.3.227.10.2" extension="G23493"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" code="22298006" codeSystem="2.16.840.1.113883.6.96" displayName="Myocardial infarction"/>
+                  <informant>
+                    <assignedEntity>
+                      <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                      <addr use="WP">
+                        <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                        <streetAddressLine>Apt C</streetAddressLine>
+                        <city>South Bend</city>
+                        <state>IN</state>
+                        <postalCode>46615</postalCode>
+                        <country>US</country>
+                      </addr>
+                      <telecom use="HP" value="(574)-666-5555"/>
+                      <telecom use="MC" value="(574)-666-5554"/>
+                      <representedOrganization>
+                        <name></name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                  <entryRelationship typeCode="COMP">
+                    <act classCode="ACT" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.40"/>
+                      <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" displayName="Annotation comment"/>
+                      <text>(Deceased)</text>
+                      <statusCode code="completed"/>
+                    </act>
+                  </entryRelationship>
+                  <entryRelationship typeCode="CAUS">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <id root="2.16.840.1.113883.3.227.10.2" extension="G23493"/>
+                      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" code="419099009" codeSystem="2.16.840.1.113883.6.96" displayName="Dead"/>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.23"/>
+              <statusCode code="completed"/>
+              <subject>
+                <relatedSubject classCode="PRS">
+                  <code code="72705000" codeSystem="2.16.840.1.113883.6.96" displayName="Mother"/>
+                  <subject>
+                    <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Female"/>
+                    <birthTime nullFlavor="NA"/>
+                  </subject>
+                </relatedSubject>
+              </subject>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.42"/>
+                  <id root="2.16.840.1.113883.3.227.10.2" extension="G23494"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CD" code="46635009" codeSystem="2.16.840.1.113883.6.96" displayName="Diabetes mellitus type 1"/>
+                  <informant>
+                    <assignedEntity>
+                      <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                      <addr use="WP">
+                        <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                        <streetAddressLine>Apt C</streetAddressLine>
+                        <city>South Bend</city>
+                        <state>IN</state>
+                        <postalCode>46615</postalCode>
+                        <country>US</country>
+                      </addr>
+                      <telecom use="HP" value="(574)-666-5555"/>
+                      <telecom use="MC" value="(574)-666-5554"/>
+                      <representedOrganization>
+                        <name></name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                  <entryRelationship typeCode="COMP">
+                    <act classCode="ACT" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.40"/>
+                      <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" displayName="Annotation comment"/>
+                      <text>(Deceased)</text>
+                      <statusCode code="completed"/>
+                    </act>
+                  </entryRelationship>
+                  <entryRelationship typeCode="CAUS">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <id root="2.16.840.1.113883.3.227.10.2" extension="G23494"/>
+                      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CD" code="419099009" codeSystem="2.16.840.1.113883.6.96" displayName="Dead"/>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.23"/>
+              <statusCode code="completed"/>
+              <subject>
+                <relatedSubject classCode="PRS">
+                  <code code="125677006" codeSystem="2.16.840.1.113883.6.96" displayName="Number of Children"/>
+                  <subject>
+                    <administrativeGenderCode code="U" codeSystem="2.16.840.1.113883.5.1" displayName="Unknown"/>
+                    <birthTime nullFlavor="NA"/>
+                  </subject>
+                </relatedSubject>
+              </subject>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.22"/>
+                  <id root="2.16.840.1.113883.3.227.10.2" extension="I73"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime nullFlavor="NA"/>
+                  <value xsi:type="CD" displayName="4"/>
+                  <informant>
+                    <assignedEntity>
+                      <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                      <addr use="WP">
+                        <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                        <streetAddressLine>Apt C</streetAddressLine>
+                        <city>South Bend</city>
+                        <state>IN</state>
+                        <postalCode>46615</postalCode>
+                        <country>US</country>
+                      </addr>
+                      <telecom use="HP" value="(574)-666-5555"/>
+                      <telecom use="MC" value="(574)-666-5554"/>
+                      <representedOrganization>
+                        <name></name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.23"/>
+              <statusCode code="completed"/>
+              <subject>
+                <relatedSubject classCode="PRS">
+                  <code code="125677006" codeSystem="2.16.840.1.113883.6.96" displayName="Number of Siblings"/>
+                  <subject>
+                    <administrativeGenderCode code="U" codeSystem="2.16.840.1.113883.5.1" displayName="Unknown"/>
+                    <birthTime nullFlavor="NA"/>
+                  </subject>
+                </relatedSubject>
+              </subject>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.22"/>
+                  <id root="2.16.840.1.113883.3.227.10.2" extension="I110"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime nullFlavor="NA"/>
+                  <value xsi:type="CD" displayName="Siblings: 6"/>
+                  <informant>
+                    <assignedEntity>
+                      <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                      <addr use="WP">
+                        <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                        <streetAddressLine>Apt C</streetAddressLine>
+                        <city>South Bend</city>
+                        <state>IN</state>
+                        <postalCode>46615</postalCode>
+                        <country>US</country>
+                      </addr>
+                      <telecom use="HP" value="(574)-666-5555"/>
+                      <telecom use="MC" value="(574)-666-5554"/>
+                      <representedOrganization>
+                        <name></name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+<!--
+********************************************************
+  Social History section
+********************************************************
+-->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.15"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Social History</title>
+          <text>
+            <table border="thin solid #cccccc" width="100%">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Date</th>
+                  <th>Description</th>
+                  <th>Comments</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Marital Status</td>
+                  <td></td>
+                  <td>Patient is married</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Living Situation</td>
+                  <td></td>
+                  <td>Lives with spouse</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Diet</td>
+                  <td></td>
+                  <td>Diet is healthy and well balanced</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Sleep</td>
+                  <td></td>
+                  <td>6-7 HRS</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Pets</td>
+                  <td></td>
+                  <td>There are no pets in the home</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Occupation</td>
+                  <td></td>
+                  <td>Medically Retired</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Cigarette Use</td>
+                  <td>1947 - 1972</td>
+                  <td>Smoked Cigarettes</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ETOH Use</td>
+                  <td></td>
+                  <td>Social alcohol use</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Daily Caffeine</td>
+                  <td></td>
+                  <td>Some caffeine consumption</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Exercise Type/Frequency Current</td>
+                  <td></td>
+                  <td>Exercises sporadically</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.33"/>
+              <id root="2.16.840.1.113883.3.227.10.3" extension="I190"/>
+              <code code="160476009" codeSystem="2.16.840.1.113883.6.96" displayName="Marital Status"/>
+              <statusCode code="completed"/>
+              <value xsi:type="ST">Patient is married</value>
+              <informant>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                  <addr use="WP">
+                    <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                    <streetAddressLine>Apt C</streetAddressLine>
+                    <city>South Bend</city>
+                    <state>IN</state>
+                    <postalCode>46615</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="HP" value="(574)-666-5555"/>
+                  <telecom use="MC" value="(574)-666-5554"/>
+                  <representedOrganization>
+                    <name></name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.33"/>
+              <id root="2.16.840.1.113883.3.227.10.3" extension="I191"/>
+              <code code="160476009" codeSystem="2.16.840.1.113883.6.96" displayName="Living Situation"/>
+              <statusCode code="completed"/>
+              <value xsi:type="ST">Lives with spouse</value>
+              <informant>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                  <addr use="WP">
+                    <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                    <streetAddressLine>Apt C</streetAddressLine>
+                    <city>South Bend</city>
+                    <state>IN</state>
+                    <postalCode>46615</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="HP" value="(574)-666-5555"/>
+                  <telecom use="MC" value="(574)-666-5554"/>
+                  <representedOrganization>
+                    <name></name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.33"/>
+              <id root="2.16.840.1.113883.3.227.10.3" extension="I193"/>
+              <code code="160476009" codeSystem="2.16.840.1.113883.6.96" displayName="Diet"/>
+              <statusCode code="completed"/>
+              <value xsi:type="ST">Diet is healthy and well balanced</value>
+              <informant>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                  <addr use="WP">
+                    <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                    <streetAddressLine>Apt C</streetAddressLine>
+                    <city>South Bend</city>
+                    <state>IN</state>
+                    <postalCode>46615</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="HP" value="(574)-666-5555"/>
+                  <telecom use="MC" value="(574)-666-5554"/>
+                  <representedOrganization>
+                    <name></name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.33"/>
+              <id root="2.16.840.1.113883.3.227.10.3" extension="I194"/>
+              <code code="160476009" codeSystem="2.16.840.1.113883.6.96" displayName="Sleep"/>
+              <statusCode code="completed"/>
+              <value xsi:type="ST">6-7 HRS</value>
+              <informant>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                  <addr use="WP">
+                    <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                    <streetAddressLine>Apt C</streetAddressLine>
+                    <city>South Bend</city>
+                    <state>IN</state>
+                    <postalCode>46615</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="HP" value="(574)-666-5555"/>
+                  <telecom use="MC" value="(574)-666-5554"/>
+                  <representedOrganization>
+                    <name></name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.33"/>
+              <id root="2.16.840.1.113883.3.227.10.3" extension="I196"/>
+              <code code="160476009" codeSystem="2.16.840.1.113883.6.96" displayName="Pets"/>
+              <statusCode code="completed"/>
+              <value xsi:type="ST">There are no pets in the home</value>
+              <informant>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                  <addr use="WP">
+                    <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                    <streetAddressLine>Apt C</streetAddressLine>
+                    <city>South Bend</city>
+                    <state>IN</state>
+                    <postalCode>46615</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="HP" value="(574)-666-5555"/>
+                  <telecom use="MC" value="(574)-666-5554"/>
+                  <representedOrganization>
+                    <name></name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.33"/>
+              <id root="2.16.840.1.113883.3.227.10.3" extension="G23495"/>
+              <code code="184104002" codeSystem="2.16.840.1.113883.6.96" displayName="Occupation"/>
+              <statusCode code="completed"/>
+              <value xsi:type="ST">Medically Retired</value>
+              <informant>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                  <addr use="WP">
+                    <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                    <streetAddressLine>Apt C</streetAddressLine>
+                    <city>South Bend</city>
+                    <state>IN</state>
+                    <postalCode>46615</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="HP" value="(574)-666-5555"/>
+                  <telecom use="MC" value="(574)-666-5554"/>
+                  <representedOrganization>
+                    <name></name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.33"/>
+              <id root="2.16.840.1.113883.3.227.10.3" extension="G50526"/>
+              <code code="230056004" codeSystem="2.16.840.1.113883.6.96" displayName="Cigarette Smoking"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+		<low value="1947"/>
+		<high value="1972"/>
+	      </effectiveTime>
+              <value xsi:type="ST">Smoked Cigarettes</value>
+              <informant>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                  <addr use="WP">
+                    <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                    <streetAddressLine>Apt C</streetAddressLine>
+                    <city>South Bend</city>
+                    <state>IN</state>
+                    <postalCode>46615</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="HP" value="(574)-666-5555"/>
+                  <telecom use="MC" value="(574)-666-5554"/>
+                  <representedOrganization>
+                    <name></name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.33"/>
+              <id root="2.16.840.1.113883.3.227.10.3" extension="G50527"/>
+              <code code="160573003" codeSystem="2.16.840.1.113883.6.96" displayName="ETOH Use"/>
+              <statusCode code="completed"/>
+              <value xsi:type="ST">Social alcohol use</value>
+              <informant>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                  <addr use="WP">
+                    <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                    <streetAddressLine>Apt C</streetAddressLine>
+                    <city>South Bend</city>
+                    <state>IN</state>
+                    <postalCode>46615</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="HP" value="(574)-666-5555"/>
+                  <telecom use="MC" value="(574)-666-5554"/>
+                  <representedOrganization>
+                    <name></name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.33"/>
+              <id root="2.16.840.1.113883.3.227.10.3" extension="G50528"/>
+              <code code="160476009" codeSystem="2.16.840.1.113883.6.96" displayName="Daily Caffeine"/>
+              <statusCode code="completed"/>
+              <value xsi:type="ST">Some caffeine consumption</value>
+              <informant>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                  <addr use="WP">
+                    <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                    <streetAddressLine>Apt C</streetAddressLine>
+                    <city>South Bend</city>
+                    <state>IN</state>
+                    <postalCode>46615</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="HP" value="(574)-666-5555"/>
+                  <telecom use="MC" value="(574)-666-5554"/>
+                  <representedOrganization>
+                    <name></name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.33"/>
+              <id root="2.16.840.1.113883.3.227.10.3" extension="I211"/>
+              <code code="160476009" codeSystem="2.16.840.1.113883.6.96" displayName="Exercise Type/Frequency Current"/>
+              <statusCode code="completed"/>
+              <value xsi:type="ST">Exercises sporadically</value>
+              <informant>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                  <addr use="WP">
+                    <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                    <streetAddressLine>Apt C</streetAddressLine>
+                    <city>South Bend</city>
+                    <state>IN</state>
+                    <postalCode>46615</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="HP" value="(574)-666-5555"/>
+                  <telecom use="MC" value="(574)-666-5554"/>
+                  <representedOrganization>
+                    <name></name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+            </observation>
+          </entry>
+        </section>
+      </component>
+<!--
+********************************************************
+  Alerts section
+********************************************************
+-->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.2"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Allergies, Adverse Reactions, Alerts</title>
+          <text>
+            <table border="thin solid #cccccc" width="100%">
+              <tbody>
+                <tr>
+                  <th>Date</th>
+                  <th>Description</th>
+                  <th>Reaction</th>
+                  <th>Status</th>
+                  <th>Severity</th>
+                  <th>Comments</th>
+                </tr>
+                <tr>
+                  <td>01/01/1945</td>
+                  <td>Pencillin</td>
+                  <td>Hives</td>
+                  <td>Active</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.27"/>
+              <templateId root="2.16.840.1.113883.3.88.11.32.6"/>
+              <id root="2.16.840.1.113883.3.227.10.4" extension="3682"/>
+              <code nullFlavor="NA"/>
+              <informant>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                  <addr use="WP">
+                    <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                    <streetAddressLine>Apt C</streetAddressLine>
+                    <city>South Bend</city>
+                    <state>IN</state>
+                    <postalCode>46615</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="HP" value="(574)-666-5555"/>
+                  <telecom use="MC" value="(574)-666-5554"/>
+                  <representedOrganization>
+                    <name></name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+              <entryRelationship typeCode="SUBJ">
+		<observation classCode="OBS" moodCode="EVN">
+		  <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+		  <!-- Alert status observation template -->
+		  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+		  <statusCode code="completed"/>
+		  <value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
+		</observation>
+	       </entryRelationship>
+               <entryRelationship typeCode="MFST">
+		<observation classCode="OBS" moodCode="EVN">
+		  <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+		  <!-- Reaction observation template -->
+		    <id root="4adc1020-7b14-11db-9fe1-0800200c9a64"/>
+		    <code nullFlavor="NA"/>
+		    <text>
+		      <reference value="#reaction1"/>
+		    </text>
+		    <statusCode code="completed"/>
+		    <effectiveTime>
+			<low value="19450101"/>
+		    </effectiveTime>
+		    <value xsi:type="CD" code="247472004" codeSystem="2.16.840.1.113883.6.96" displayName="Hives"/>
+		</observation>
+	      </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+<!--
+********************************************************
+  Medications section
+********************************************************
+-->
+      <component>
+        <section>
+          <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.8"/>
+          <code code="10160-0" displayName="History of medication use" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>Medications</title>
+          <text>
+            <table border="thin solid #cccccc" width="100%">
+              <thead>
+                <tr>
+                  <th>Medication</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Form</th>
+                  <th>Strength</th>
+                  <th>Qnty</th>
+                  <th>SIG</th>
+                  <th>Indications (ICD-9)</th>
+                  <th>Ordering Provider</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Evista</td>
+                  <td>09/24/2012</td>
+                  <td>Active</td>
+                  <td>Tablets</td>
+                  <td>60mg</td>
+                  <td>30</td>
+                  <td><content ID='sig-0'>1 po qd</content></td>
+                  <td> </td>
+                  <td>John Doe, M. D.</td>
+                </tr>
+                <tr>
+                  <td>Vitamin D</td>
+                  <td>07/23/2012</td>
+                  <td>Active</td>
+                  <td>Capsules</td>
+                  <td>50000Unit</td>
+                  <td>12</td>
+                  <td><content ID='sig-1'>1 po q week x 12 weeks, then 1000 units daily therafter</content></td>
+                  <td> </td>
+                  <td>John Doe, M. D.</td>
+                </tr>
+                <tr>
+                  <td>Lexapro</td>
+                  <td>04/16/2012</td>
+                  <td>Active</td>
+                  <td>Tablets</td>
+                  <td>20mg</td>
+                  <td>30</td>
+                  <td><content ID='sig-2'>1 po qd</content></td>
+                  <td> </td>
+                  <td>John Doe, M. D.</td>
+                </tr>
+                <tr>
+                  <td>Aspir-81</td>
+                  <td>01/08/2012</td>
+                  <td>Active</td>
+                  <td>Tablets DR</td>
+                  <td>81mg</td>
+                  <td></td>
+                  <td><content ID='sig-3'>1 po qd</content></td>
+                  <td> </td>
+                  <td>John Doe, M. D.</td>
+                </tr>
+                <tr>
+                  <td>Xanax</td>
+                  <td>12/15/2011</td>
+                  <td>Active</td>
+                  <td>Tablets</td>
+                  <td>1mg</td>
+                  <td>60</td>
+                  <td><content ID='sig-4'>1-2 po bid prn                          sixty</content></td>
+                  <td> </td>
+                  <td>John Doe, M. D.</td>
+                </tr>
+                <tr>
+                  <td>Cyanocobalamin</td>
+                  <td>11/06/2011</td>
+                  <td>Active</td>
+                  <td>Solution</td>
+                  <td>1000mcg/ML</td>
+                  <td>30ml</td>
+                  <td><content ID='sig-5'>1 ML Q Monthly</content></td>
+                  <td> </td>
+                  <td>John Doe, M. D.</td>
+                </tr>
+                <tr>
+                  <td>Levothyroxine Sodium</td>
+                  <td>06/16/2011</td>
+                  <td>Active</td>
+                  <td>Tablets</td>
+                  <td>150mcg</td>
+                  <td>30</td>
+                  <td><content ID='sig-6'>1/2 po qd</content></td>
+                  <td> </td>
+                  <td>John Doe, M. D.</td>
+                </tr>
+                <tr>
+                  <td>Proventil 0.09 MG/ACTUAT inhalant solution</td>
+                  <td>03/01/2011</td>
+                  <td>Active</td>
+                  <td>Inhallent</td>
+                  <td>120mcg</td>
+                  <td>120</td>
+                  <td><content ID='sig-6'>1/2 po qd</content></td>
+                  <td>Bronchitis (32398004 SNOMED CT)</td>
+                  <td>Robery Donnelly, M. D.</td>
+                </tr>
+                <tr>
+                  <td>Hydrocodone &amp; Acetaminophen</td>
+                  <td>05/05/2008</td>
+                  <td>Active</td>
+                  <td>Tablets</td>
+                  <td>5mg;500 mg</td>
+                  <td>60</td>
+                  <td><content ID='sig-7'>1 po  bid prn</content></td>
+                  <td> </td>
+                  <td>John Doe, M. D.</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="COMP">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.8"/>
+              <id root="2.16.840.1.113883.3.227.10.5" extension="113096"/>
+              <text>
+                <reference value="#sig-0"/>
+              </text>
+              <statusCode code="active"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20120924"/>
+              </effectiveTime>
+              <administrationUnitCode code="C42998" displayName="Tablets" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.53"/>
+                  <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.9"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code code="312768" displayName="Raloxifene 60 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                      <originalText>Evista</originalText>
+                    </code>
+                    <name>Evista</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.88.11.32.10"/>
+                  <code code="73639000" displayName="Prescription Drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="Active"/>
+                  <value xsi:type="CE" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <informant>
+                    <assignedEntity>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <addr use="WP">
+                        <streetAddressLine>734 Broadway Avenue</streetAddressLine>
+                        <streetAddressLine>Carmel, IN 46615-1236</streetAddressLine>
+                        <country>US</country>
+                      </addr>
+                      <telecom use="WP" value="tel:+1(574)-712-0490"/>
+                      <assignedPerson>
+                        <name>John Doe, M. D.</name>
+                      </assignedPerson>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.3.88.1.11.32.11"/>
+                  <id root="2.16.840.1.113883.3.227.10.5" extension="113096"/>
+                  <repeatNumber value="6"/>
+                  <quantity value="30"/>
+                  <author>
+                    <time value="20120924"/>
+                    <assignedAuthor>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="COMP">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.8"/>
+              <id root="2.16.840.1.113883.3.227.10.5" extension="108314"/>
+              <text>
+                <reference value="#sig-1"/>
+              </text>
+              <statusCode code="active"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20120723"/>
+              </effectiveTime>
+              <administrationUnitCode code="C25158" displayName="Capsules" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.53"/>
+                  <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.9"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code code="358363" displayName="Ergocalciferol 50000 Unt Oral Capsule" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                      <originalText>Vitamin D</originalText>
+                    </code>
+                    <name>Vitamin D</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.88.11.32.10"/>
+                  <code code="73639000" displayName="Prescription Drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="Active"/>
+                  <value xsi:type="CE" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <informant>
+                    <assignedEntity>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <addr use="WP">
+                        <streetAddressLine>734 Broadway Avenue</streetAddressLine>
+                        <streetAddressLine>South Bend,  IN 46615-1236</streetAddressLine>
+                        <country>US</country>
+                      </addr>
+                      <telecom use="WP" value="tel:+1(716)-712-0490"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.3.88.1.11.32.11"/>
+                  <id root="2.16.840.1.113883.3.227.10.5" extension="108314"/>
+                  <repeatNumber value="1"/>
+                  <quantity value="12"/>
+                  <author>
+                    <time value="20090723"/>
+                    <assignedAuthor>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="COMP">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.8"/>
+              <id root="2.16.840.1.113883.3.227.10.5" extension="100430"/>
+              <text>
+                <reference value="#sig-2"/>
+              </text>
+              <statusCode code="active"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20120416"/>
+              </effectiveTime>
+              <administrationUnitCode code="C42998" displayName="Tablets" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.53"/>
+                  <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.9"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code code="351250" displayName="Escitalopram 20 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                      <originalText>Lexapro</originalText>
+                    </code>
+                    <name>Lexapro</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.88.11.32.10"/>
+                  <code code="73639000" displayName="Prescription Drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="Active"/>
+                  <value xsi:type="CE" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <informant>
+                    <assignedEntity>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <addr use="WP">
+                        <streetAddressLine>734 Broadway Avenue</streetAddressLine>
+                        <streetAddressLine>South Bend,  IN 46615-1236</streetAddressLine>
+                        <country>US</country>
+                      </addr>
+                      <telecom use="WP" value="tel:+1(716)-712-0490"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.3.88.1.11.32.11"/>
+                  <id root="2.16.840.1.113883.3.227.10.5" extension="100430"/>
+                  <repeatNumber value="5"/>
+                  <quantity value="30"/>
+                  <author>
+                    <time value="20120416"/>
+                    <assignedAuthor>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="COMP">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.8"/>
+              <id root="2.16.840.1.113883.3.227.10.5" extension="92408"/>
+              <text>
+                <reference value="#sig-3"/>
+              </text>
+              <statusCode code="active"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20120108"/>
+              </effectiveTime>
+              <administrationUnitCode code="C42905" displayName="Tablets DR" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.53"/>
+                  <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.9"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code code="308416" displayName="Aspirin 81 MG Enteric Coated Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                      <originalText>Aspir-81</originalText>
+                    </code>
+                    <name>Aspir-81</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.88.11.32.10"/>
+                  <code code="329505003" displayName="Over the counter product" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="Active"/>
+                  <value xsi:type="CE" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <informant>
+                    <assignedEntity>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <addr use="WP">
+                        <streetAddressLine>734 Broadway Avenue</streetAddressLine>
+                        <streetAddressLine>South Bend,  IN 46615-1236</streetAddressLine>
+                        <country>US</country>
+                      </addr>
+                      <telecom use="WP" value="tel:+1(716)-712-0490"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.3.88.1.11.32.11"/>
+                  <id root="2.16.840.1.113883.3.227.10.5" extension="92408"/>
+                  <repeatNumber value="1"/>
+                  <author>
+                    <time value="20120108"/>
+                    <assignedAuthor>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="COMP">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.8"/>
+              <id root="2.16.840.1.113883.3.227.10.5" extension="90778"/>
+              <text>
+                <reference value="#sig-4"/>
+              </text>
+              <statusCode code="active"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20111215"/>
+              </effectiveTime>
+              <maxDoseQuantity>
+                <numerator value="4"/>
+                <denominator value="1"/>
+              </maxDoseQuantity>
+              <administrationUnitCode code="C42998" displayName="Tablets" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.53"/>
+                  <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.9"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code code="197321" displayName="Alprazolam 1 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                      <originalText>Xanax</originalText>
+                    </code>
+                    <name>Xanax</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.88.11.32.10"/>
+                  <code code="73639000" displayName="Prescription Drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="Active"/>
+                  <value xsi:type="CE" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <informant>
+                    <assignedEntity>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <addr use="WP">
+                        <streetAddressLine>734 Broadway Avenue</streetAddressLine>
+                        <streetAddressLine>South Bend,  IN 46615-1236</streetAddressLine>
+                        <country>US</country>
+                      </addr>
+                      <telecom use="WP" value="tel:+1(716)-712-0490"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.3.88.1.11.32.11"/>
+                  <id root="2.16.840.1.113883.3.227.10.5" extension="90778"/>
+                  <repeatNumber value="1"/>
+                  <quantity value="60"/>
+                  <author>
+                    <time value="20111215"/>
+                    <assignedAuthor>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="COMP">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.8"/>
+              <id root="2.16.840.1.113883.3.227.10.5" extension="87767"/>
+              <text>
+                <reference value="#sig-5"/>
+              </text>
+              <statusCode code="active"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20111106"/>
+              </effectiveTime>
+              <administrationUnitCode code="C42986" displayName="Solution" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.53"/>
+                  <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.9"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code code="309594" displayName="Vitamin B 12 1 MG/ML Injectable Solution" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                      <originalText>Cyanocobalamin</originalText>
+                    </code>
+                    <name>Cyanocobalamin</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.88.11.32.10"/>
+                  <code code="73639000" displayName="Prescription Drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="Active"/>
+                  <value xsi:type="CE" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <informant>
+                    <assignedEntity>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <addr use="WP">
+                        <streetAddressLine>734 Broadway Avenue</streetAddressLine>
+                        <streetAddressLine>South Bend,  IN 46615-1236</streetAddressLine>
+                        <country>US</country>
+                      </addr>
+                      <telecom use="WP" value="tel:+1(716)-712-0490"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.3.88.1.11.32.11"/>
+                  <id root="2.16.840.1.113883.3.227.10.5" extension="87767"/>
+                  <repeatNumber value="3"/>
+                  <quantity value="30" unit="ml"/>
+                  <author>
+                    <time value="20111106"/>
+                    <assignedAuthor>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="COMP">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.8"/>
+              <id root="2.16.840.1.113883.3.227.10.5" extension="77880"/>
+              <text>
+                <reference value="#sig-6"/>
+              </text>
+              <statusCode code="active"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20110616"/>
+              </effectiveTime>
+              <administrationUnitCode code="C42998" displayName="Tablets" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.53"/>
+                  <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.9"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code code="238751" displayName="Thyroxine 0.15 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                      <originalText>Levothyroxine Sodium</originalText>
+                    </code>
+                    <name>Levothyroxine Sodium</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.88.11.32.10"/>
+                  <code code="73639000" displayName="Prescription Drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="Active"/>
+                  <value xsi:type="CE" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <informant>
+                    <assignedEntity>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <addr use="WP">
+                        <streetAddressLine>734 Broadway Avenue</streetAddressLine>
+                        <streetAddressLine>South Bend,  IN 46615-1236</streetAddressLine>
+                        <country>US</country>
+                      </addr>
+                      <telecom use="WP" value="tel:+1(716)-712-0490"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.3.88.1.11.32.11"/>
+                  <id root="2.16.840.1.113883.3.227.10.5" extension="77880"/>
+                  <repeatNumber value="5"/>
+                  <quantity value="30"/>
+                  <author>
+                    <time value="20110616"/>
+                    <assignedAuthor>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="COMP">
+
+
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.8"/>
+              <id root="2.16.840.1.113883.3.227.10.5" extension="77880"/>
+              <text>
+                <reference value="#Med1"/> 0.09 MG/ACTUAT inhalant solution, 2 puffs QID PRN wheezing
+              </text>
+              <statusCode code="active"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20110616"/>
+              </effectiveTime>
+              <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                <period value="6" unit="h"/>
+              </effectiveTime>
+              <routeCode code="C38216" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="RESPIRATORY (INHALATION)"/>
+              <doseQuantity value="1"/>
+              <rateQuantity value="90" unit="ml/min"/>
+              <maxDoseQuantity nullFlavor="UNK">
+              <numerator nullFlavor="UNK"/>
+              <denominator nullFlavor="UNK"/>
+              </maxDoseQuantity>
+              <administrationUnitCode code="C42944" displayName="INHALANT" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <consumable>
+		<manufacturedProduct>
+		<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+		<id/>
+		    <manufacturedMaterial>
+			<code code="329498" codeSystem="2.16.840.1.113883.6.88" displayName="Albuterol 0.09 MG/ACTUAT inhalant solution">
+				<translation code="573621" displayName="Proventil 0.09 MG/ACTUAT inhalant solution" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+			</code>
+			</manufacturedMaterial>
+		    <manufacturerOrganization/>
+		 </manufacturedProduct>
+	      </consumable>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.88.11.32.10"/>
+                  <code code="73639000" displayName="Prescription Drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="Active"/>
+                  <value xsi:type="CE" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <informant>
+                    <assignedEntity>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <addr use="WP">
+                        <streetAddressLine>734 Broadway Avenue</streetAddressLine>
+                        <streetAddressLine>South Bend,  IN 46615-1236</streetAddressLine>
+                        <country>US</country>
+                      </addr>
+                      <telecom use="WP" value="tel:+1(716)-712-0490"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.3.88.1.11.32.11"/>
+                  <id root="2.16.840.1.113883.3.227.10.5" extension="77880"/>
+                  <repeatNumber value="5"/>
+                  <quantity value="30"/>
+                  <author>
+                    <time value="20110616"/>
+                    <assignedAuthor>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="COMP">
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.8"/>
+              <id root="2.16.840.1.113883.3.227.10.5" extension="1051"/>
+              <text>
+                <reference value="#sig-7"/>
+              </text>
+              <statusCode code="active"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20110505"/>
+              </effectiveTime>
+              <maxDoseQuantity>
+                <numerator value="2"/>
+                <denominator value="1"/>
+              </maxDoseQuantity>
+              <administrationUnitCode code="C42998" displayName="Tablets" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.53"/>
+                  <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.9"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <name>Hydrocodone &amp; Acetaminophen</name>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="SUBJ">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.88.11.32.10"/>
+                  <code code="73639000" displayName="Prescription Drug" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <statusCode code="completed"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47"/>
+                  <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="Active"/>
+                  <value xsi:type="CE" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                  <informant>
+                    <assignedEntity>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <addr use="WP">
+                        <streetAddressLine>734 Broadway Avenue</streetAddressLine>
+                        <streetAddressLine>South Bend,  IN 46615-1236</streetAddressLine>
+                        <country>US</country>
+                      </addr>
+                      <telecom use="WP" value="tel:+1(716)-712-0490"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR">
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.3.88.1.11.32.11"/>
+                  <id root="2.16.840.1.113883.3.227.10.5" extension="1051"/>
+                  <repeatNumber value="1"/>
+                  <quantity value="60"/>
+                  <author>
+                    <time value="20110505"/>
+                    <assignedAuthor>
+                      <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                      <assignedPerson>
+                        <name>Patricia W. Baxter Do</name>
+                      </assignedPerson>
+                    </assignedAuthor>
+                  </author>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+<!--
+********************************************************
+  Immunizations section
+********************************************************
+-->
+      <component>
+        <section>
+          <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.6"/>
+          <code code="11369-6" codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Immunizations</title>
+          <text>
+            <table border="thin solid #cccccc" width="100%">
+              <thead>
+                <tr>
+                  <th>CPT Code</th>
+                  <th>Date</th>
+                  <th>Vaccine</th>
+                  <th>Reaction</th>
+                  <th>Manufacturer</th>
+                  <th>Lot #</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>90732</td>
+                  <td>Given: 09/01/2012</td>
+                  <td>Pneumococcal Vaccine 2Yrs Or Older</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>90658</td>
+                  <td>Given: 09/01/2012</td>
+                  <td>Influenza Virus 3 Yrs And Above For Intramuscular Use</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Given: 09/01/2008</td>
+                  <td>Tetanus/Diphtheria Toxoids Td</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <substanceAdministration negationInd="false" classCode="SBADM" moodCode="EVN">
+              <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.14"/>
+              <id root="2.16.840.1.113883.3.227.10.6" extension="130227"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <center value="20120901"/>
+              </effectiveTime>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                  <templateId root="2.16.840.1.113883.3.88.11.32.9"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code code="90732" displayName="Pneumococcal Vaccine 2Yrs Or Older" codeSystem="2.16.840.1.113883.6.59" codeSystemName="CVX">
+                      <originalText>Pneumococcal Vaccine 2Yrs Or Older</originalText>
+                    </code>
+                    <lotNumberText></lotNumberText>
+                  </manufacturedMaterial>
+                    <manufacturerOrganization>
+                      <name></name>
+                    </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <performer typeCode="PRF">
+                <assignedEntity>
+                  <id extension="" root="2.16.840.1.113883.4.6"/>
+                  <assignedPerson>
+                  </assignedPerson>
+                  <representedOrganization>
+                    <name>Michiana Health Information Network</name>
+                  </representedOrganization>
+                </assignedEntity>
+              </performer>
+              <informant>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                  <addr use="WP">
+                    <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                    <streetAddressLine>Apt C</streetAddressLine>
+                    <city>South Bend</city>
+                    <state>IN</state>
+                    <postalCode>46615</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="HP" value="(574)-666-5555"/>
+                  <telecom use="MC" value="(574)-666-5554"/>
+                  <representedOrganization>
+                    <name></name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration negationInd="false" classCode="SBADM" moodCode="EVN">
+              <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.14"/>
+              <id root="2.16.840.1.113883.3.227.10.6" extension="130226"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <center value="20120901"/>
+              </effectiveTime>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                  <templateId root="2.16.840.1.113883.3.88.11.32.9"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code code="90658" displayName="Influenza Virus 3 Yrs And Above For Intramuscular Use" codeSystem="2.16.840.1.113883.6.59" codeSystemName="CVX">
+                      <originalText>Influenza Virus 3 Yrs And Above For Intramuscular Use</originalText>
+                    </code>
+                    <lotNumberText></lotNumberText>
+                  </manufacturedMaterial>
+                    <manufacturerOrganization>
+                      <name></name>
+                    </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <performer typeCode="PRF">
+                <assignedEntity>
+                  <id extension="" root="2.16.840.1.113883.4.6"/>
+                  <assignedPerson>
+                  </assignedPerson>
+                  <representedOrganization>
+                    <name>Michiana Health Information Network</name>
+                  </representedOrganization>
+                </assignedEntity>
+              </performer>
+              <informant>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                  <addr use="WP">
+                    <streetAddressLine>734 Broadway Avenue</streetAddressLine>
+                    <streetAddressLine></streetAddressLine>
+                    <city>South Bend</city>
+                    <state>IN</state>
+                    <postalCode>46615</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="HP" value="(574)-666-5555"/>
+                  <telecom use="MC" value="(574)-666-5554"/>
+                  <representedOrganization>
+                    <name></name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+            </substanceAdministration>
+          </entry>
+          <entry typeCode="DRIV">
+            <substanceAdministration negationInd="false" classCode="SBADM" moodCode="EVN">
+              <templateId assigningAuthorityName="CCD" root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId assigningAuthorityName="HITSP/C32" root="2.16.840.1.113883.3.88.11.32.14"/>
+              <id root="2.16.840.1.113883.3.227.10.6" extension="31634"/>
+              <statusCode code="completed"/>
+              <effectiveTime xsi:type="IVL_TS">
+                <center value="20080991"/>
+              </effectiveTime>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                  <templateId root="2.16.840.1.113883.3.88.11.32.9"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <code code="90718" displayName="Tetanus/Diphtheria Toxoids Td" codeSystem="2.16.840.1.113883.6.59" codeSystemName="CVX">
+                      <originalText>Tetanus/Diphtheria Toxoids Td</originalText>
+                    </code>
+                    <lotNumberText></lotNumberText>
+                  </manufacturedMaterial>
+                    <manufacturerOrganization>
+                      <name></name>
+                    </manufacturerOrganization>
+                </manufacturedProduct>
+              </consumable>
+              <performer typeCode="PRF">
+                <assignedEntity>
+                  <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                  <assignedPerson>
+                    <name>Patricia W. Baxter Do</name>
+                  </assignedPerson>
+                  <representedOrganization>
+                    <name>Michiana Health Information Network</name>
+                  </representedOrganization>
+                </assignedEntity>
+              </performer>
+              <informant>
+                <assignedEntity>
+                  <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                  <addr use="WP">
+                    <streetAddressLine>734 Broadway Avenue</streetAddressLine>
+                    <streetAddressLine>South Bend,  IN 46615-1236</streetAddressLine>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="WP" value="tel:+1(716)-712-0490"/>
+                  <assignedPerson>
+                    <name>Patricia W. Baxter Do</name>
+                  </assignedPerson>
+                </assignedEntity>
+              </informant>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+<!--
+********************************************************
+  Vital Signs section
+********************************************************
+-->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.16"/>
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Vital Signs</title>
+          <text>
+            <table border="thin solid #cccccc" width="100%">
+              <tbody>
+                <tr>
+                  <th>Date</th>
+                  <th>Vital</th>
+                  <th>Result</th>
+                  <th>Comment</th>
+                </tr>
+                <tr>
+                  <td rowspan="5">01/11/2013</td>
+                  <td>Blood Pressure</td>
+                  <td>141/83 mmHg</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Pulse</td>
+                  <td>84 bpm</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Respiration Rate</td>
+                  <td>16 </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Height</td>
+                  <td>66 inches</td>
+                  <td>5&apos;6&quot;</td>
+                </tr>
+                <tr>
+                  <td>Weight</td>
+                  <td>175 lb</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.35"/>
+              <id root="2.16.840.1.113883.3.227.10.7" extension="39287"/>
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" displayName="Vital signs"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20130111"/>
+              <informant>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.3.1805.1" extension=""/>
+                  <addr use="WP">
+                    <streetAddressLine>510 East Lasalle Avenue</streetAddressLine>
+                    <streetAddressLine>Apt C</streetAddressLine>
+                    <city>South Bend</city>
+                    <state>IN</state>
+                    <postalCode>46615</postalCode>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="HP" value="(574)-666-5555"/>
+                  <telecom use="MC" value="(574)-666-5554"/>
+                  <representedOrganization>
+                    <name></name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <id root="2.16.840.1.113883.3.227.10.8" extension="39287-1"/>
+                  <code code="75367002" codeSystem="2.16.840.1.113883.6.96" displayName="Blood Pressure"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20130111"/>
+                  <value xsi:type="ST">141/83 mmHg</value>
+                  <interpretationCode nullFlavor="NA"/>
+                  <referenceRange>
+                    <observationRange nullFlavor="NA"/>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <id root="2.16.840.1.113883.3.227.10.8" extension="39287-45"/>
+                  <code code="8499008" codeSystem="2.16.840.1.113883.6.96" displayName="Pulse"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20130111"/>
+                  <value xsi:type="PQ" value="84" unit="bpm"/>
+                  <interpretationCode nullFlavor="NA"/>
+                  <referenceRange>
+                    <observationRange nullFlavor="NA"/>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <id root="2.16.840.1.113883.3.227.10.8" extension="39287-49"/>
+                  <code code="86290005" codeSystem="2.16.840.1.113883.6.96" displayName="Respiration Rate"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20130111"/>
+                  <value xsi:type="ST">16 </value>
+                  <interpretationCode nullFlavor="NA"/>
+                  <referenceRange>
+                    <observationRange nullFlavor="NA"/>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <id root="2.16.840.1.113883.3.227.10.8" extension="39287-57"/>
+                  <code code="50373000" codeSystem="2.16.840.1.113883.6.96" displayName="Height"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20130111"/>
+                  <value xsi:type="PQ" value="66" unit="[in_I]"/>
+                  <interpretationCode nullFlavor="NA"/>
+                  <entryRelationship typeCode="COMP">
+                    <act classCode="ACT" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.40"/>
+                      <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" displayName="Annotation comment"/>
+                      <text>5&apos;6&quot;</text>
+                      <statusCode code="completed"/>
+                    </act>
+                  </entryRelationship>
+                  <referenceRange>
+                    <observationRange nullFlavor="NA"/>
+                  </referenceRange>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <id root="2.16.840.1.113883.3.227.10.8" extension="39287-61"/>
+                  <code code="27113001" codeSystem="2.16.840.1.113883.6.96" displayName="Weight"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20130111"/>
+                  <value xsi:type="PQ" value="175" unit="[lb_ap]"/>
+                  <interpretationCode nullFlavor="NA"/>
+                  <referenceRange>
+                    <observationRange nullFlavor="NA"/>
+                  </referenceRange>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+
+<!--
+********************************************************
+  Encounters section
+********************************************************
+-->
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.3"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1"/>
+          <title>Encounters</title>
+          <text>
+            <table border="thin solid #cccccc" width="100%">
+              <tbody>
+                <tr>         
+                  <th>Type</th>
+                  <th>Date</th>
+                  <th>Location</th>
+                  <th>Provider</th>
+                  <th>CPT E/M</th>
+		  <th>Content</th>
+                </tr>
+                <tr>
+                  <td>Office Visit</td>
+                  <td>01/11/2013 01:30p</td>
+                  <td>Main Office</td>
+                  <td>Patricia W. Baxter Do</td>
+                  <td>99214</td>
+                  <td>
+                     Physical Exam: 76 year old female with multiple past medical history including arrhythmia, which most likely is paroxysmal atrial 
+                     fibrillation, currently in sinus rhythm with PVCs, status post pacemaker placement and ICD; this was subsequently revised.  
+                     History of CAD, status post CABG with two-vessel disease; status post MI x1; hypertension; hyperlipidemia; hypothyroidism; 
+                     status post CVA with initial residual deficit in the right eye which has resolved; BPH; B12 deficiency; status post surgery 
+                     for peptic ulcer disease, most likely with perforation; status post spinal surgery x2; status post TURP for BPH.  The patient 
+                     came for initial visit complaining of vertigo/generalized dizziness for the last two weeks.  This usually is precipitated during 
+                     change in position from supine to upright but without any preceding or accompanying signs or symptoms like headache or amaurosis 
+                     fugax.  No presyncope or syncopal episode.  No focal deficit.  The patient denied any tinnitus, although with some aural fullness 
+                     or decreased aural acuity.  The patient has seen her former PCP and was given meclizine, which relieved the symptoms, but then it 
+                     caused the patient to be more lethargic and the patient decided to stop the medication.  Currently, the patient's vertigo or 
+                     dizziness has markedly improved.  Patient last visit with her former PCP was prescribed Sulfamethoxazole 800 MG/Trimethoprim 
+                     160 MG Oral Tablet
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </text>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.21"/>
+              <templateId root="2.16.840.1.113883.3.88.11.32.17"/>
+              <id root="2.16.840.1.113883.3.227.7.1" extension="55651"/>
+              <code code="99214" displayName="Office Visit Est Level 4" codeSystem="2.16.840.1.113883.6.12">
+                <originalText>Office Visit</originalText>
+              </code>
+              <text>
+                     Physical Exam: 76 year old female with multiple past medical history including arrhythmia, which most likely is paroxysmal atrial 
+                     fibrillation, currently in sinus rhythm with PVCs, status post pacemaker placement and ICD; this was subsequently revised.  
+                     History of CAD, status post CABG with two-vessel disease; status post MI x1; hypertension; hyperlipidemia; hypothyroidism; 
+                     status post CVA with initial residual deficit in the right eye which has resolved; BPH; B12 deficiency; status post surgery 
+                     for peptic ulcer disease, most likely with perforation; status post spinal surgery x2; status post TURP for BPH.  The patient 
+                     came for initial visit complaining of vertigo/generalized dizziness for the last two weeks.  This usually is precipitated during 
+                     change in position from supine to upright but without any preceding or accompanying signs or symptoms like headache or amaurosis 
+                     fugax.  No presyncope or syncopal episode.  No focal deficit.  The patient denied any tinnitus, although with some aural fullness 
+                     or decreased aural acuity.  The patient has seen her former PCP and was given meclizine, which relieved the symptoms, but then it 
+                     caused the patient to be more lethargic and the patient decided to stop the medication.  Currently, the patient's vertigo or 
+                     dizziness has markedly improved.  Patient last visit with her former PCP was prescribed Sulfamethoxazole 800 MG/Trimethoprim 
+                     160 MG Oral Tablet
+              <reference value="#encounter-29"/></text>
+              <effectiveTime>
+                <low value="20120924114500+0400"/>
+              </effectiveTime>
+              <performer typeCode="PRF">
+                <assignedEntity classCode="ASSIGNED">
+                  <id root="2.16.840.1.113883.4.6" extension="1205842184"/>
+                  <code nullFlavor="NA">
+                    <originalText>ATTEND</originalText>
+                  </code>
+                  <addr use="WP">
+                    <streetAddressLine>734 Broadway Avenue</streetAddressLine>
+                    <streetAddressLine>South Bend,  IN 46615-1236</streetAddressLine>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="WP" value="tel:+1(716)-712-0490"/>
+                  <assignedPerson determinerCode="INSTANCE" classCode="PSN">
+                    <name>Patricia W. Baxter Do</name>
+                  </assignedPerson>
+                  <representedOrganization>
+                    <name>Michiana Health Information Network</name>
+                  </representedOrganization>
+                </assignedEntity>
+              </performer>
+              <informant>
+                <assignedEntity>
+                  <id extension="1205842184" root="2.16.840.1.113883.4.6"/>
+                  <addr use="WP">
+                    <streetAddressLine>734 Broadway Avenue</streetAddressLine>
+                    <streetAddressLine>South Bend,  IN 46615-1236</streetAddressLine>
+                    <country>US</country>
+                  </addr>
+                  <telecom use="WP" value="tel:+1(716)-712-0490"/>
+                  <assignedPerson>
+                    <name>Patricia W. Baxter Do</name>
+                  </assignedPerson>
+                </assignedEntity>
+              </informant>
+              <participant typeCode="LOC">
+                <templateId root="2.16.840.1.113883.10.20.1.45"/>
+                <participantRole classCode="SDLOC">
+                  <id root="2.16.840.1.113883.3.227.7.2" extension="1"/>
+                  <playingEntity classCode="PLC">
+                    <name>Main Office</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="RSON">
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.40"/>
+                  <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" displayName="Annotation comment"/>
+                  <text>780.52 F/U: Followup: as needed. 787.91 F/U: Followup:. (Follow up)</text>
+                  <statusCode code="completed"/>
+                </act>
+              </entryRelationship>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

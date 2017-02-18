@@ -1,0 +1,5 @@
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\CcdInterfaces\bin\Debug\CcdInterfaces.dll
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\CcdInterfaces\bin\Debug\CcdInterfaces.pdb
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\CcdInterfaces\obj\Debug\CcdInterfaces.dll
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\CcdInterfaces\obj\Debug\CcdInterfaces.pdb
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\CcdInterfaces\obj\Debug\CcdInterfaces.csprojResolveAssemblyReference.cache

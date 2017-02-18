@@ -1,0 +1,250 @@
+﻿.files:nth-child(1){
+    padding-top: 20px;
+   }
+
+.files {
+    padding-left: 20px;
+    font-size: smaller;
+    line-height: 10px;
+}
+
+.ccdButton {
+    float: right;
+    margin-top: 80px;
+}
+
+.containert div {
+    float: left;
+    width: 45%;
+    background-repeat: no-repeat;
+    padding: 4px;
+}
+
+.container {
+    height: 800px;
+}
+
+    .container div {
+        background-repeat: no-repeat;
+        float: left;
+        width: 300px;
+        padding-top: 5px;
+    }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none outside none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #000000;
+    font-family: Arial,Helvetica,Sans-serif;
+    font-size: 13px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+h2, h3, h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.download {
+    background-image: url("../images/download.png");
+    display: block;
+    height: 165px;
+    line-height: 165px;
+    outline: medium none;
+    padding-left: 100px;
+    width: 176px;
+}
+
+.preview {
+    height: 79px;
+}
+
+    .preview img {
+        border: 2px solid #FFFFFF;
+        height: 56px;
+        margin-right: 20px;
+        vertical-align: middle;
+        width: 56px;
+    }
+
+.preview, .filename {
+    float: left;
+}
+
+.filename {
+    overflow: hidden;
+    width: 180px;
+}
+
+.progressbar {
+    float: right;
+    margin: 29px 48px 0 0;
+    width: 133px;
+}
+
+#main {
+    margin: 0 auto;
+    width: 720px;
+}
+
+#logo-container {
+    padding-top: 100px;
+    text-align: center;
+}
+
+    #logo-container img {
+        height: 146px;
+        width: 303px;
+    }
+
+.header-download {
+    float: right;
+}
+
+article {
+    clear: both;
+}
+
+    article a {
+        color: #8830BC;
+    }
+
+    article p {
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+pre {
+    line-height: 18px;
+}
+
+section {
+    margin-top: 60px;
+}
+
+#demo p {
+    margin-bottom: 50px;
+}
+
+#dropbox {
+    border: thin solid #000000;
+    height: 314px;
+    margin: 7px;
+    padding-right: 10px;
+    width: 304px;
+}
+#json {
+    padding-left: 10px;
+}
+
+#upload {
+    border-top: 1px solid #FFFFFF;
+    display: none;
+    margin-top: -350px;
+    width: 460px;
+}
+
+    #upload > div {
+        clear: both;
+    }
+
+#settings-container {
+    background-image: url("../img/settings-background.jpg");
+    margin: 0 auto;
+    width: 960px;
+}
+
+    #settings-container section {
+        margin: 0 auto;
+        padding-top: 60px;
+        width: 720px;
+    }
+
+    #settings-container li {
+        line-height: 18px;
+        margin-top: 15px;
+    }
+
+    #settings-container .download {
+        margin-left: 66px;
+    }
+
+#relateds {
+    margin: 0 auto 40px;
+    overflow: hidden;
+    width: 820px;
+}
+
+    #relateds span {
+        border-bottom: 1px solid #FFFFFF;
+        display: block;
+        margin-bottom: 30px;
+        padding-bottom: 12px;
+    }
+
+    #relateds li {
+        display: block;
+        float: left;
+        margin-right: 20px;
+    }
+
+    #relateds a {
+        color: #FFFFFF;
+        line-height: 24px;
+    }
+
+footer {
+    font-size: 22px;
+    margin: 0 auto;
+    padding-bottom: 67px;
+    text-align: center;
+    width: 720px;
+}
+
+    footer img {
+        height: 52px;
+        vertical-align: middle;
+        width: 80px;
+    }

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ccddedup">
+  <DataContextMoniker Name="/ccddedupDataContext" />
+  <nestedChildShapes>
+    <classShape Id="147a853c-eaad-44e8-b6e6-479fde2fedc3" absoluteBounds="0.5, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/ccddedupDataContext/audit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="48ce48c7-3a23-4365-bd15-99864942fad1" absoluteBounds="0.515, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="36f46e1d-c6a1-46a5-b846-9042998932ac" absoluteBounds="3.375, 0.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ccddedupDataContext/audit_ccd" />
+      <nestedChildShapes>
+        <elementListCompartment Id="56b251b6-7e5f-4fdd-9652-8070e491d240" absoluteBounds="3.39, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="40267b84-add5-4a26-8880-3cc786f355b4" absoluteBounds="0.625, 3.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ccddedupDataContext/audit_discard" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5fd14d3c-f99d-484b-a25d-6093654c8708" absoluteBounds="0.64, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

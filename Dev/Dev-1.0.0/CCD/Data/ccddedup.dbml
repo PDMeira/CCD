@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ccddedup" Class="ccddedupDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ccddedup.ctvzibnivsyr.us-east-1.rds.amazonaws.com,1433;Initial Catalog=ccddedup;User ID=master" SettingsObjectName="Data.Properties.Settings" SettingsPropertyName="ccddedupConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.audit" Member="audits">
+    <Type Name="audit">
+      <Column Name="AuditId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MergeId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="DateStamp" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MergeRule" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RuleVersion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PreRuleMasterCcd" Type="System.Xml.Linq.XElement" DbType="Xml" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PostRuleMasterCcd" Type="System.Xml.Linq.XElement" DbType="Xml" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="RunSeconds" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.audit_ccd" Member="audit_ccds">
+    <Type Name="audit_ccd">
+      <Column Name="auditId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CcdId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CcdData" Type="System.Xml.Linq.XElement" DbType="Xml" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PrePost" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.audit_discard" Member="audit_discards">
+    <Type Name="audit_discard">
+      <Column Name="AuditId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DiscardId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DiscardData" Type="System.Xml.Linq.XElement" DbType="Xml" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>

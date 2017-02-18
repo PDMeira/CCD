@@ -1,0 +1,4 @@
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\Security\bin\Debug\Security.dll
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\Security\bin\Debug\Security.pdb
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\Security\obj\Debug\Security.dll
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\Security\obj\Debug\Security.pdb

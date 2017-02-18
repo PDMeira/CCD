@@ -1,0 +1,7 @@
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\Data\bin\Debug\Data.dll.config
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\Data\bin\Debug\Data.dll
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\Data\bin\Debug\Data.pdb
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\Data\bin\Debug\AWSSDK.dll
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\Data\obj\Debug\Data.dll
+C:\Users\mhosseini\.VS Source 2010\CCD\Dev\Dev-1.0.0\CCD\Data\obj\Debug\Data.pdb
